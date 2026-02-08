@@ -83,6 +83,12 @@ body {
 }
 
 /* ===== NAVBAR ===== */
+.nav-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
 nav{
     position:fixed;
     left:0;
@@ -91,11 +97,12 @@ nav{
     height:100vh;
     background:var(--card);
     border-right:1px solid var(--cardShadow);
-    padding:30px 20px;
+    padding:15px 20px;
     display:flex;
     flex-direction:column;
     transition: transform 0.3s ease;
-    transform: translateX(0);  
+    transform: translateX(0);
+    z-index:1000;  
 }
 
 nav ul{
@@ -115,20 +122,23 @@ nav a:hover{
 }
 nav h1{
     font-size:22px;
-    margin-bottom:40px;
+    margin-bottom:20px;
 }
 nav.closed{
-    transform:translateX(-220%);
+    width:70px;
 }
-
+nav.closed ul,
+nav.closed h1{
+    display:none;
+}
 body.full{
-    margin-left:0;
+    margin-left:70px;
 }
 
 #sidebar-toggle{
     position:fixed;
     top:15px;
-    left:15px;
+    left:240px;   /* 👈 move it OUTSIDE sidebar */
     z-index:2000;
     font-size:22px;
     background:var(--mainColor);
