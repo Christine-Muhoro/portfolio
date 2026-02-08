@@ -398,6 +398,10 @@ footer {
     color:#aaa;
 }
 
+img{
+    max-width:100%;
+    height:auto;
+}
 
 
 /* ===== MOBILE RESPONSIVE ===== */
@@ -405,34 +409,71 @@ footer {
 
     nav{
         flex-direction:column;
+        align-items:center;
         gap:15px;
+        padding:15px;
     }
 
-    .hero h1{
-        font-size:35px;
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+    .hero{
+    min-height:auto;
+    padding:40px 20px;
+    gap:20px;
+    }
+
+    .hero-img img{
+    width:180px;
+    }
+
+    .education{
+        grid-template-columns:1fr;
+    }
+
+    .ed-card{
+        width:100%;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skill-card{
+        width:100%;
     }
 
     .card{
         flex-direction:column;
         text-align:center;
+        align-items:center;
     }
 
     .project-img{
-        width:80px;
-        height:80px;
+        width:100px;
+        height:100px;
+        margin-bottom:10px;
+    }
+
+    .design-info{
+        flex-direction:column;
+        overflow-x:hidden;
+        align-items:center;
     }
 
     .design-info img{
-        height:150px;
+        width:100%;
+        height:auto;
+        max-width:300px;
     }
     .skills{
         grid-template-columns:1fr;
     }
     .contact-wrapper{
         grid-template-columns:1fr;
+        gap:30px;
     }
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-    }
+
 }
