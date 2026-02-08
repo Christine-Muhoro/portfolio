@@ -23,5 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    const btn = document.getElementById("sidebar-toggle");
+    const sidebar = document.getElementById("sidebar");
+
+    btn.addEventListener("click", function () {
+
+        // MOBILE
+        if (window.innerWidth <= 768){
+            sidebar.classList.toggle("show");
+            return;
+        }
+
+        // DESKTOP
+        sidebar.classList.toggle("closed");
+        document.body.classList.toggle("full");
+    });
+
+
 });
 
