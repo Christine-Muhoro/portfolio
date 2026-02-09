@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="topbar">
+    <button id="sidebar-toggle">☰</button>
+    <h1 class="top-title">Christine Portfolio</h1>
+    <button id="themeToggle">☀️🌙</button>
+</header>
+
 <!-- ===== NAVBAR ===== -->
 <nav id="sidebar">
-    <div class="nav-header">
-        <h1>Christine Portfolio</h1>
-        <button id="sidebar-toggle">☰</button>
-        <button id="themeToggle">☀️🌙</button>
-    </div>
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#education">Education</a></li>
@@ -247,75 +248,38 @@
 </section>
 
 <!-- ===== CONTACTS SECTION ===== -->
-<section id="contacts">
-  <div class="container">
+<footer class="footer">
 
-    <h2 class="section-title">Contact Me</h2>
+    <div class="footer-top">
+        <h2>Let's work together 😊</h2>
+    </div>
 
-    <div class="contact-wrapper">
+    <div class="footer-content">
 
-        <!-- LEFT SIDE INFO -->
-        <div class="contact-info">
-            <h3>Let's work together 😊</h3>
-            <p>Feel free to reach out!</p>
-
-            <div class="contact-item">
-                <b>Email:</b>
-                <p><a href="mailto:christinenmuhoro@gmail.com">Email</a></p>
-            </div>
-            <div class="contact-item">
-                <b>LinkedIn:</b>
-                <p><a href="https://www.linkedin.com/in/christine-muhoro-84106b281" target="_blank">View Profile</a></p>
-            </div>
-            <div class="contact-item">
-                <b>Github:</b>
-                <p><a href="https://github.com/Christine-Muhoro" target="_blank">Main Account</a> |
-                   <a href="https://github.com/Christine-Njeri" target="_blank">Second Account</a></p>
-            </div>
-
-            <div class="contact-item">
-                <b>Phone:</b>
-                <p>+254 740 569 957</p>
-            </div>
-
-            <div class="contact-item">
-                <b>Location:</b>
-                <p>Kiambu, Kenya</p>
-            </div>
-
-            <a class="btn" href="CV.pdf" download>Download CV</a>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <p>Email: christinenmuhoro@email.com</p>
+            <p>Phone: +254 740 569 957...</p>
+            <p>Kiambu, Kenya</p>
         </div>
 
-        <!-- RIGHT SIDE FORM -->
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+        <div class="footer-column">
+            <h4>Links</h4>
+            <a href="https://github.com/Christine-Muhoro" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/christine-muhoro-84106b281/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="footer-column">
+            <a href="#" class="btn">Download CV</a>
+        </div>
 
     </div>
 
-  </div>
-</section>
+    <div class="copyright">
+        © 2026 Christine Njeri
+    </div>
 
-
-<footer>
-    <div class="container footer-content">
-
-      <h2>Christine Njeri</h2>
-      <p>Data Scientist & Graphic Designer</p>
-
-      <div class="socials">
-          <a href="https://github.com/Christine-Muhoro" target="_blank">Github Main</a>
-          <a href="https://github.com/Christine-Njeri" target="_blank">Github Other</a>
-          <a href="https://www.linkedin.com/in/christine-muhoro-84106b281" target="_blank">LinkedIn</a>
-          <a href="mailto:christinenmuhoro@gmail.com">Email</a>
-      </div>
-
-      <p class="copyright">© 2026 Christine All Rights Reserved</p>
-
-  </div></footer>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

@@ -35,18 +35,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (sidebarBtn && sidebar) {
         sidebarBtn.addEventListener("click", function () {
-
             // MOBILE
             if (window.innerWidth <= 768){
                 sidebar.classList.toggle("show");
                 return;
             }
-
             // DESKTOP
-            sidebar.classList.toggle("closed");
-            document.body.classList.toggle("full");
-
+            sidebar.classList.toggle("hidden");
+            document.body.classList.toggle("expanded");
         });
     }
+
 
 });
