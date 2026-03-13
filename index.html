@@ -4,25 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <header class="topbar">
-    <button id="sidebar-toggle">☰</button>
-    <h1 class="top-title">Christine Portfolio</h1>
-    <button id="themeToggle">☀️🌙</button>
+    <div class="top-left">
+        <button id="sidebar-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1 class="cnm-logo">CNM</h1>
+        <h1 class="top-title">Christine Njeri Muhoro</h1>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#data-science">Data Science</a></li>
+            <li><a href="#graphics">Graphics</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <button id="themeToggle">☀️light mode🌙dark mode</button>
 </header>
-
-<!-- ===== NAVBAR ===== -->
-<nav id="sidebar">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#data-science">Data Science</a></li>
-        <li><a href="#graphics">Graphic Design</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
-</nav>
 
 <!-- ===== HERO SECTION ===== -->
 <section id="home">
@@ -30,16 +35,49 @@
     <div class="hero-img">
           <img src="images/me.jpeg">
     </div>
-    <div>
+    <div class="hero-text">
         <h1>Christine Njeri Muhoro</h1>
-        <p>Data Scientist & Graphic Designer</p>
-
-        <a class="btn" href="CV.pdf">View Resume</a>
-        <a class="btn-outline" href="#contacts">Contact Me</a>
+        <p>Data Scientist • Machine Learning Engineer • Graphic Designer</p>
+        <p class="hero-tagline">
+            Turning real-world problems into intelligent data-driven solutions 
+            through Machine Learning, analytics and creative design.
+        </p>
+        <a class="btn" href="christine latest cv 2026.pdf">
+            <i class="fa-solid fa-file"></i> View Resume
+        </a>
+        <a class="btn" href="#contacts">
+            <i class="fa-solid fa-paper-plane"></i> Contact me
+        </a>
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:christinenmuhoro@gmail.com"> christinenmuhoro@gmail.com </a>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+254740569957"> +254 740 569 957</a><br>
+            <i class="fa-solid fa-location-dot"></i> Kiambu, Kenya
+        </p>
     </div>
 </div>
-</section>
 
+<!-- ===== ABOUT SECTION ===== -->
+</section>
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="container about">
+<p>
+I am a Data Scientist and Graphic Designer with a strong foundation in Mathematics and Computer Science, 
+having graduated with First Class Honors. I also completed an intensive Data Science program at 
+Moringa School, where I gained hands-on experience in data analysis, machine learning, and  
+predictive modeling.
+<br><br>
+I am passionate about extracting meaningful insights from data and building machine learning solutions 
+to solve real-world problems. My work focuses on data analysis, machine learning, and data visualization 
+using Python, applying statistical and computational techniques to transform raw data into actionable knowledge.
+<br><br>
+Alongside my technical background, I am also a graphic designer, which allows me to combine analytical thinking 
+with creativity. This helps me present complex data and insights in clear, engaging, and visually compelling ways.
+</p>
+</div>
+</section>
 <!-- ===== EDUCATION SECTION ===== -->
 <section id="education">
     <h2 class="section-title">Education</h2>
@@ -163,15 +201,28 @@
 
 <!-- ===== DATA SCIENCE SECTION ===== -->
 <section id="data-science">
-    <h2 class="section-title">Data Science Projects -> Github Repositories</h2>
+    <h2 class="section-title">Data Science Projects</h2>
     <div class="container">
     <div class="data-science-projects">
-
-        <a href="https://github.com/Christine-Muhoro/Phase-4-twitter-sentiment-analysis-project" target="_blank">
-            <div class="card">
-                <img src="images/twitter.jpg" class="project-img">
-                <h3>Twitter Sentiment Analysis</h3>
+        
+        <div class="card">
+            <img src="images/twitter.jpg" class="project-img">
+            <h3>Twitter Sentiment Analysis</h3>
+            <p>A binary model that classifies tweets as positive and negative 
+                and a multiclass model that classifies tweets as positive, negative and neutral, 
+                 using Natural Language Processing techniques and
+                based on apple and google product reviews on Twitter.</p>
+            <div class="project-tools">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NLP</span>
+                <span>Scikit-learn</span>
             </div>
+
+<a class="btn" href="https://github.com/Christine-Muhoro/Phase-4-twitter-sentiment-analysis-project" target="_blank">
+View Repository
+</a>
+        </div>
         </a>
 
         <a href="https://github.com/Christine-Muhoro/Phase-3-churn-project" target="_blank">    
@@ -247,36 +298,54 @@
     </div>
 </section>
 
-<!-- ===== CONTACTS SECTION ===== -->
-<footer class="footer">
-
+<!-- ===== CONTACT SECTION ===== -->
+<footer class="footer" id="contacts">
     <div class="footer-top">
-        <h2>Let's work together 😊</h2>
+        <h2>Contacts</h2>
     </div>
-
     <div class="footer-content">
-
+        <!-- CONTACT INFO -->
         <div class="footer-column">
-            <h4>Contact</h4>
-            <p>Email: christinenmuhoro@email.com</p>
-            <p>Phone: +254 740 569 957...</p>
-            <p>Kiambu, Kenya</p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:christinenmuhoro@gmail.com">
+                    christinenmuhoro@gmail.com
+                </a>
+            </p>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+254740569957">
+                    +254 740 569 957
+                </a>
+            </p>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Kiambu, Kenya
+            </p>
         </div>
-
+        <!-- SOCIAL LINKS -->
         <div class="footer-column">
-            <h4>Links</h4>
-            <a href="https://github.com/Christine-Muhoro" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/christine-muhoro-84106b281/" target="_blank">LinkedIn</a>
+            <div class="socials">
+                <a href="https://github.com/Christine-Muhoro" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/christine-muhoro-84106b281/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
         </div>
-
+        <!-- CV BUTTON -->
         <div class="footer-column">
-            <a href="#" class="btn">Download CV</a>
-        </div>
+            <h4>Resume</h4>
 
+            <a href="christine latest cv 2026.pdf" class="btn" download>
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+        </div>
     </div>
 
     <div class="copyright">
-        © 2026 Christine Njeri
+        © 2026 Christine Njeri Muhoro
     </div>
 
 </footer>
