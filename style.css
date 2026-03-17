@@ -13,7 +13,7 @@
     top:0;
     left:0;
     width:100%;
-    height:60px;
+    height:80px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -178,7 +178,7 @@ body {
 }
 
 .hero-text{
-    max-width:600px;
+    max-width:800px;
 }
 
 .hero-text h1{
@@ -188,7 +188,7 @@ body {
 }
 
 .hero-text p{
-    font-size:20px;
+    font-size:22px;
     margin-bottom:18px;
 }
 
@@ -197,7 +197,9 @@ body {
     line-height:1.6;
     margin-bottom:30px;
 }
-
+.hero-contact{
+    font-size:12px;
+}
 .hero .btn{
     margin:10px 12px 20px 0;
 }
@@ -282,14 +284,53 @@ body {
 
 .card{
     display:flex;
-    gap:20px;              /* space between image & text */
-    align-items:center;
-    border:1px solid #ddd;
+    flex-direction:column;   /* stack everything vertically */
+    gap:15px;
+    border:1px solid var(--border);
     padding:25px;
     border-radius:15px;
     background:var(--card);
-    min-height:140px;      /* makes card taller */
     transition:0.3s;
+}
+/* header (icon + title) */
+.card-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* icon image */
+.project-icon{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:10px;
+    flex-shrink:0;
+}
+
+/* title */
+.card h3{
+    font-size:24px;
+    margin:0;
+}
+
+/* achievements list */
+.card ul{
+    list-style: none;
+    padding-left:20px;
+}
+
+.card ul li{
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+/* buttons at bottom */
+.card-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:10px;
 }
 
 /* project image box */
@@ -299,11 +340,6 @@ body {
     background:#eee;
     border-radius:10px;
     flex-shrink:0;
-}
-
-/* project title */
-.card h3{
-    font-size:22px;
 }
 
 /* ===== EDUCATION SECTION ===== */
@@ -484,7 +520,7 @@ a:hover{
 @media (max-width:768px){
 
     .hero{
-        flex-direction:row;
+        flex-direction:column;
         text-align:center;
         gap:60px;
     }
@@ -525,15 +561,6 @@ a:hover{
 
     #nav-menu.show{
         transform:translateX(0);
-    }
-    .hero{
-    min-height:auto;
-    padding:40px 20px;
-    gap:20px;
-    }
-
-    .hero-img img{
-    width:180px;
     }
 
     .education{

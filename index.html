@@ -26,7 +26,7 @@
             <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
-    <button id="themeToggle">☀️light mode🌙dark mode</button>
+    <button id="themeToggle">☀️🌙</button>
 </header>
 
 <!-- ===== HERO SECTION ===== -->
@@ -48,7 +48,7 @@
         <a class="btn" href="#contacts">
             <i class="fa-solid fa-paper-plane"></i> Contact me
         </a>
-        <p>
+        <p class="hero-contact">
             <i class="fa-solid fa-envelope"></i>
             <a href="mailto:christinenmuhoro@gmail.com"> christinenmuhoro@gmail.com </a>
             <i class="fa-solid fa-phone"></i>
@@ -204,47 +204,73 @@ with creativity. This helps me present complex data and insights in clear, engag
     <h2 class="section-title">Data Science Projects</h2>
     <div class="container">
     <div class="data-science-projects">
-        
         <div class="card">
+            <div class="card-header">
+            <img src="images/EV-charging-station.jpg" class="project-img">
+            <h3>TwendeEV : Optimizing Kenyan EV Charging Station Locations </h3>
+            </div>
+            <p><strong>Key Achievements:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-star"></i> Used population, existing stations and county locations data population beig the main feature.</li>
+                <li><i class="fa-solid fa-star"></i> Engineered key features such as population density and spatial density to improve predictive modeling.</li>
+                <li><i class="fa-solid fa-star"></i> Built a Random Forest Regressor achieving R² = 0.67 and MAE = 0.28 to predict additional charging station demand.</li>
+                <li><i class="fa-solid fa-star"></i> Applied KMeans clustering to generate optimized geographic coordinates, recommending 75 new charging stations nationwide.</li>
+                <li><i class="fa-solid fa-star"></i> Designed and deployed an interactive Streamlit application enabling users to explore station distribution and download maps/location data.</li>
+            </ul>
+            <div class="card-buttons">
+                <a class="btn" href="https://github.com/maryannngongi/EV_Charging_Stations_Optimization" target="_blank">View Repository</a>
+                <a class="btn" href="https://twende-ev.streamlit.app/" target="_blank">Explore App</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
             <img src="images/twitter.jpg" class="project-img">
             <h3>Twitter Sentiment Analysis</h3>
-            <p>A binary model that classifies tweets as positive and negative 
-                and a multiclass model that classifies tweets as positive, negative and neutral, 
-                 using Natural Language Processing techniques and
-                based on apple and google product reviews on Twitter.</p>
-            <div class="project-tools">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>NLP</span>
-                <span>Scikit-learn</span>
             </div>
-
-<a class="btn" href="https://github.com/Christine-Muhoro/Phase-4-twitter-sentiment-analysis-project" target="_blank">
-View Repository
-</a>
+            <p><strong>Key Achievements:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-star"></i> Preprocessed and cleaned an Apple/Google products tweets dataset, including tokenization, stop word removal, and lemmatization.</li>
+                <li><i class="fa-solid fa-star"></i> Performed exploratory data analysis with a countplot of sentiment distribution and 3 word clouds for each sentiment.</li>
+                <li><i class="fa-solid fa-star"></i> Implemented a binary(positive/negative) classification model with Random Forest being the best model, achieving 87% accuracy and 98% recall.</li>
+                <li><i class="fa-solid fa-star"></i> Developed a multiclass(positive/negative/neutral) classification model with Random Forest being the best model, achieving 67%accuracy and 67% recall.</li>
+            </ul>
+            <div class="card-buttons">
+                <a class="btn" href="https://github.com/Christine-Muhoro/Phase-4-twitter-sentiment-analysis-project" target="_blank">View Repository</a>
+            </div>
         </div>
-        </a>
 
-        <a href="https://github.com/Christine-Muhoro/Phase-3-churn-project" target="_blank">    
-            <div class="card">
-                <img src="images/churn.png" class="project-img">
-                <h3>Syria Tel Customer Churn Prediction</h3>
+        <div class="card">
+            <div class="card-header">
+            <img src="images/churn.png" class="project-img">
+            <h3>Syria Tel Customer Churn Prediction</h3>
             </div>
-        </a>
-
-        <a href="https://github.com/Christine-Muhoro/movie_group_project" target="_blank">    
-            <div class="card">
-                <img src="images/movie.jpg" class="project-img">
-                <h3>Movie Genres Analysis</h3>
+            <p><strong>Key Achievements:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-star"></i> Developed a customer churn prediction model achieving 94% accuracy and 81% recall to minimize missed churn cases.</li>
+                <li><i class="fa-solid fa-star"></i> Preprocessed data using normalization, one-hot encoding, and SMOTE to handle class imbalance and improve model performance.</li>
+                <li><i class="fa-solid fa-star"></i> Built and tuned multiple models including Logistic Regression and Decision Trees, with the tuned Decision Tree outperforming others.</li>
+                <li><i class="fa-solid fa-star"></i> Performed feature importance analysis, identifying key churn drivers such as customer service calls, total daytime minutes, and international plan usage.</li>
+            </ul>
+            <div class="card-buttons">
+                <a class="btn" href="https://github.com/Christine-Muhoro/Phase-3-churn-project" target="_blank">View Repository</a>
             </div>
-        </a>
-
-        <a href="https://github.com/Christine-Muhoro/Phase-1-Project" target="_blank">    
-            <div class="card">
-                <img src="images/aviation.jpg" class="project-img">
-                <h3>Aviation Accident Analysis</h3>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+            <img src="images/movie.jpg" class="project-img">
+            <h3>Movie Genres Analysis</h3>
             </div>
-        </a>
+            <p><strong>Key Achievements:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-star"></i> Analyzed movie datasets from Box Office Mojo, IMDb, and The Numbers to identify key drivers of film success.</li>
+                <li><i class="fa-solid fa-star"></i> Conducted exploratory data analysis to uncover relationships between genres, budgets, ratings, and box office performance.</li>
+                <li><i class="fa-solid fa-star"></i> Identified top-performing genres (Animation, Adventure) and optimal release periods (May–July) for maximizing profitability.</li>
+            </ul>
+            <div class="card-buttons">
+                <a class="btn" href="https://github.com/Christine-Muhoro/movie_group_project" target="_blank">View Repository</a>
+            </div>
+        </div>
     </div>
     </div>
 </section>
