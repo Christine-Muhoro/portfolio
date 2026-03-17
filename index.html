@@ -12,7 +12,7 @@
         <button id="sidebar-toggle">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <h1 class="cnm-logo">CNM</h1>
+        <div class="avatar">CNM</div>
         <h1 class="top-title">Christine Njeri Muhoro</h1>
     </div>
     <nav id="nav-menu">
@@ -49,11 +49,18 @@
             <i class="fa-solid fa-paper-plane"></i> Contact me
         </a>
         <p class="hero-contact">
+        <span class="contact-item">
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:christinenmuhoro@gmail.com"> christinenmuhoro@gmail.com </a>
+            <a href="mailto:christinenmuhoro@gmail.com">christinenmuhoro@gmail.com</a>
+        </span>
+        <span class="contact-item">
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+254740569957"> +254 740 569 957</a><br>
-            <i class="fa-solid fa-location-dot"></i> Kiambu, Kenya
+            <a href="tel:+254740569957">+254 740 569 957</a>
+        </span>
+        <span class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            Kiambu, Kenya
+        </span>
         </p>
     </div>
 </div>
@@ -84,37 +91,55 @@ with creativity. This helps me present complex data and insights in clear, engag
     <div class="container">
     <div class="education">
         <div class="ed-card">
-            <h3>BSc. Mathematics and Computer Science</h3>
-            <p>(First Class Honors)</p>
-            <p>Jomo Kenyatta University of Agriculture and Technology</p>
-            <p><span class="date">Sept 2021 - Dec 2025</span></p>
+            <div class="ed-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="ed-text">
+                <h3>BSc. Mathematics and Computer Science</h3>
+                <p>(First Class Honors)</p>
+                <p>Jomo Kenyatta University of Agriculture and Technology</p>
+                <p><span class="date">Sept 2021 - Dec 2025</span></p>
+            </div>
         </div>
         <div class="ed-card">
-            <h3>Data Science</h3>
-            <p>Moringa School</p>
-            <p><span class="date">Aug 2025 - Feb 2026</span></p>
+            <div class="ed-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="ed-text">
+                <h3>Data Science</h3>
+                <p>Moringa School</p>
+                <p><span class="date">Aug 2025 - Feb 2026</span></p>
+            </div>
         </div>
         <div class="ed-card">
-            <h3>Graphics Design</h3>
-            <p>(Distinction)</p>
-            <p>Shang Tao Media Arts College</p>
-            <p><span class="date">June 2025 - July 2026</span></p>
+            <div class="ed-icon"><i class="fa-solid fa-paintbrush"></i></div>
+            <div class="ed-text">
+                <h3>Graphics Design</h3>
+                <p>(Distinction)</p>
+                <p>Shang Tao Media Arts College</p>
+                <p><span class="date">June 2025 - July 2026</span></p>
+            </div>
         </div>
         <div class="ed-card">
-            <h3>Computer Assembly and Repair</h3>
-            <p>JKUAT Industrial Park</p>
-            <p><span class="date">June 2023 - July 2023</span></p>
+            <div class="ed-icon"><i class="fa-solid fa-computer"></i></div>
+            <div class="ed-text">
+                <h3>Computer Assembly and Repair</h3>
+                <p>JKUAT Industrial Park</p>
+                <p><span class="date">June 2023 - July 2023</span></p>
+            </div>
         </div>
         <div class="ed-card">
-            <h3>Cisco Certified Network Associate (CCNA)</h3>
-            <p>CISCO Networking Academy JKUAT</p>
-            <p><span class="date">May 2023 - Aug 2023</span></p>
+            <div class="ed-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="ed-text">
+                <h3>Cisco Certified Network Associate (CCNA)</h3>
+                <p>CISCO Networking Academy JKUAT</p>
+                <p><span class="date">May 2023 - Aug 2023</span></p>
+            </div>
         </div>
         <div class="ed-card">
-            <h3>Python Programming(Tkinter)</h3>
-            <p>(Distinction)</p>
-            <p>JKUAT Enterprises</p>
-            <p><span class="date">May 2022 - July 2022</span></p>
+            <div class="ed-icon"><i class="fa-solid fa-python"></i></div>
+            <div class="ed-text">
+                <h3>Python Programming(Tkinter)</h3>
+                <p>(Distinction)</p>
+                <p>JKUAT Enterprises</p>
+                <p><span class="date">May 2022 - July 2022</span></p>
+            </div>
         </div>
     </div>
     </div>
@@ -125,20 +150,22 @@ with creativity. This helps me present complex data and insights in clear, engag
   <div class="container">
     <h2 class="section-title">Skills</h2>
 
-    <div class="skills-grid">
+      <div class="skills-columns">
 
-        <!-- DATA SCIENCE -->
-        <div class="skill-card">
-            <h3>Data Analysis</h3>
+        <!-- LEFT COLUMN -->
+        <div class="skills-column">
+          <div class="skill">
+            <h3>Data Analysis <span class="stars">★★★★☆</span></h3>
             <div class="skill-tags">
                 <span>Python</span>
                 <span>Pandas</span>
                 <span>Numpy</span>
                 <span>SQL</span>
             </div>
-        </div>
-        <div class="skill-card">
-            <h3>Machine Learning</h3>
+          </div>
+
+          <div class="skill">
+            <h3>Machine Learning <span class="stars">★★★★☆</span></h3>
             <div class="skill-tags">
                 <span>Natural Language Processing</span>
                 <span>Neural Networks</span>
@@ -146,55 +173,56 @@ with creativity. This helps me present complex data and insights in clear, engag
                 <span>Classification</span>
                 <span>Clustering</span>
             </div>
-        </div>
+          </div>
 
-        <!-- DATA VISUALIZATION -->
-        <div class="skill-card">
-            <h3>Data Visualization</h3>
+          <div class="skill">
+            <h3>Data Visualization <span class="stars">★★★☆☆</span></h3>
             <div class="skill-tags">
                 <span>Matplotlib</span>
                 <span>Seaborn</span>
                 <span>Plotly</span>
                 <span>Tableau</span>
             </div>
+          </div>
         </div>
 
-        <!-- GRAPHIC DESIGN -->
-        <div class="skill-card">
-            <h3>Graphic Design</h3>
+        <!-- RIGHT COLUMN -->
+        <div class="skills-column">
+          <div class="skill">
+            <h3>Graphic Design <span class="stars">★★★★☆</span></h3>
             <div class="skill-tags">
                 <span>Adobe Illustrator</span>
-                <span>AdobePhotoshop</span>
+                <span>Adobe Photoshop</span>
                 <span>Adobe InDesign</span>
                 <span>Canva</span>
             </div>
-        </div>
+          </div>
 
-        <!-- Backend DEVELOPMENT -->
-        <div class="skill-card">
-            <h3>Backend Development</h3>
+          <div class="skill">
+            <h3>Backend Development <span class="stars">★★☆☆☆</span></h3>
             <div class="skill-tags">
                 <span>Python</span>
                 <span>Django</span>
             </div>
-        </div>
-        <!-- Desktop App DEVELOPMENT -->
-        <div class="skill-card">
-            <h3>Desktop App Development</h3>
+          </div>
+
+          <div class="skill">
+            <h3>Desktop App Development <span class="stars">★★☆☆☆</span></h3>
             <div class="skill-tags">
                 <span>Python</span>
                 <span>Tkinter</span>
             </div>
-        </div>
-        <!-- Additional Skills -->
-        <div class="skill-card">
-            <h3>Additional Skills</h3>
+          </div>
+
+          <div class="skill">
+            <h3>Additional Skills <span class="stars">★★★☆☆</span></h3>
             <div class="skill-tags">
                 <span>Network Administration</span>
                 <span>Applied Mathematics</span>
                 <span>Statistics</span>
             </div>
-
+          </div>
+        </div>
     </div>
   </div>
 </section>
@@ -325,56 +353,73 @@ with creativity. This helps me present complex data and insights in clear, engag
 </section>
 
 <!-- ===== CONTACT SECTION ===== -->
-<footer class="footer" id="contacts">
-    <div class="footer-top">
-        <h2>Contacts</h2>
-    </div>
-    <div class="footer-content">
-        <!-- CONTACT INFO -->
-        <div class="footer-column">
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:christinenmuhoro@gmail.com">
-                    christinenmuhoro@gmail.com
-                </a>
-            </p>
-            <p>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+254740569957">
-                    +254 740 569 957
-                </a>
-            </p>
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Kiambu, Kenya
-            </p>
-        </div>
-        <!-- SOCIAL LINKS -->
-        <div class="footer-column">
-            <div class="socials">
-                <a href="https://github.com/Christine-Muhoro" target="_blank">
-                    <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/christine-muhoro-84106b281/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
+<section id="contacts">
+    <h2 class="section-title">Contact Information</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="icon email"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+                <h4>Email</h4>
+                <a href="mailto:christinenmuhoro@gmail.com">christinenmuhoro@gmail.com</a>
             </div>
         </div>
-        <!-- CV BUTTON -->
-        <div class="footer-column">
-            <h4>Resume</h4>
-
-            <a href="christine latest cv 2026.pdf" class="btn" download>
-                <i class="fa-solid fa-download"></i> Download CV
-            </a>
+        <div class="contact-card">
+            <div class="icon phone"><i class="fa-solid fa-phone"></i></div>
+            <div>
+                <h4>Phone</h4>
+                <a href="tel:+254 740 569 957">+254 740 569 957</a>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="icon location"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+                <h4>Location</h4>
+                <p>Kiambu, Kenya</p>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="icon linkedin"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/christine-muhoro-84106b281/" target="_blank">linkedin.com/in/christine-muhoro</a>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="icon github"><i class="fa-brands fa-github"></i></div>
+            <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/Christine-Muhoro" target="_blank">github.com/Christine-Muhoro</a>
+            </div>
         </div>
     </div>
+</section>
+<footer class="footer-dark">
+
+    <div class="footer-profile">
+        <div class="avatar">CNM</div>
+        <h2>Christine Njeri Muhoro</h2>
+        <p>Data Scientist • Machine Learning Engineer • Graphic Designer</p>
+        <p class="footer-tagline">
+            Turning real-world problems into intelligent data-driven solutions through Machine Learning, analytics and creative design
+        </p>
+
+        <div class="footer-icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+    
+    <br>
 
     <div class="copyright">
-        © 2026 Christine Njeri Muhoro
+        © 2026 Christine Njeri Muhoro. All rights reserved.
     </div>
 
 </footer>
+<button id="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 <script src="script.js"></script>
 </body>
 </html>
