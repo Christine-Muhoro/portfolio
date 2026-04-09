@@ -235,23 +235,58 @@ body.dark .hero {
 }
 
 /* ===== ABOUT ===== */
-.about{
-    background:var(--card);
-    padding:35px;
-    border-radius:15px;
-    border-left:6px solid var(--mainColor);
-    box-shadow:0 5px 15px var(--cardShadow);
-    max-width:900px;
-    margin:auto;
+
+.about-card{
+    display: flex;
+    align-items: center;
+
+    background: var(--card);              /* match other cards */
+    border-radius: 15px;
+    border-left: 6px solid var(--mainColor);
+    box-shadow: 0 5px 15px var(--cardShadow);
+
+    overflow: hidden;
+    margin-top: 2rem;
+    transition: 0.3s;
 }
 
-.about p{
-    font-size:17px;
-    line-height:1.7;
-    color:var(--text);
-    opacity:0.8;
+.about-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--cardShadow);
 }
 
+
+/* Image side */
+.about-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card);
+    padding: 20px 15px;
+}
+
+.about-image img{
+    content: url('images/portfoliobanner.jpg'); /* 1:1 image */
+    width: 100%;
+    height: auto;        /* keeps correct ratio */
+    display: block;
+    max-height: 450px;
+    border-radius: 10px;
+}
+.about-text{
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    opacity: 0.9;
+}
 /* ===== PROJECT CARDS ===== */
 .data-science-projects a,.graphics-design-projects a{
     text-decoration: none;
@@ -687,6 +722,20 @@ a:hover {
         flex-direction:column;
         text-align:left;
         align-items:flex-start;
+    }
+
+    .about-card{
+        flex-direction: column;
+    }
+
+    .about-image{
+        height: 250px;
+    }
+
+    .about-image img {
+        content: url('images/gitbanner3.jpg'); /* 2:1 image */
+        max-height: 250px; /* optional: adjust height for mobile */
+        object-fit: cover;
     }
 
     .project-img{
